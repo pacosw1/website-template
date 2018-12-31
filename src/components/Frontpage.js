@@ -1,11 +1,10 @@
 import React, { Component } from "react";
+import { Post } from "./Post";
 
 export const Frontpage = props => {
-  return (
-    <div className="frontpage">
-      <h1>Post 1</h1>
-      <h1>Post 2</h1>
-      <h1>Post 3</h1>
-    </div>
-  );
+  let { posts } = props;
+  let postsArray = posts.map(post => {
+    return <Post title={post.title} text={post.text} />;
+  });
+  return <div className="frontpage">{postsArray}</div>;
 };
