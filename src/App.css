@@ -3,26 +3,50 @@
   background-color: rgba(1, 144, 201, 0.014);
   padding: 8rem;
 }
+.item-header {
+  display: flex;
+}
+.item-header {
+  justify-content: space-between;
+}
+.window {
+  border: 1px solid;
+  width: 100%;
+}
+.window * {
+  align-items: center;
+}
+.dash-container {
+  display: flex;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+.dash-item {
+  height: 20rem;
+  width: 45rem;
+  margin: 1rem;
+  border: 1px solid;
+  padding: 2rem;
+}
 
 .dash {
   display: flex;
-  padding: 1rem;
-  width: 80%;
-  flex-flow: wrap;
-  margin: 2rem;
-  justify-content: center;
+  flex-direction: column;
 }
-#test {
-  background-image: url("https://openclipart.org/image/2400px/svg_to_png/271404/Chart-Of-SD-HD-And-UHD-Formats.png");
-}
-.dash div {
-  border: 1px solid;
 
-  text-align: center;
-  padding: 5rem;
-  width: 20rem;
-  height: 20rem;
+.dash-menu {
+  border: 1px solid;
+  margin: 1rem;
+
+  padding: 0rem 1rem;
+  min-width: 20%;
 }
+.link {
+  color: rgb(43, 158, 253);
+  text-align: left;
+}
+
 .app {
   display: flex;
   flex-direction: row;
@@ -177,7 +201,6 @@ input:focus {
 }
 
 body {
-  background-color: rgb(216, 216, 216);
   height: 100vh;
 }
 

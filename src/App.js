@@ -57,8 +57,8 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Sidebar />
-        <Dashboard posts={this.state.list} />
+        <Sidebar posts={this.state.list} />
+        <Dashboard />
       </div>
     );
   }

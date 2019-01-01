@@ -2,28 +2,61 @@ import React, { Component } from "react";
 
 export const Dashboard = props => {
   return (
-    <React.Fragment>
+    <div className="dash-container">
+      <Dashboard />
+      <div className="dash-menu">
+        <h3>Additional Options</h3>
+        <a className="link">
+          <h4>Add a vendor</h4>
+          <h4>Add a customer</h4>
+
+          <h4>Customize invoices</h4>
+        </a>
+      </div>
       <div className="dash">
-        <div>
-          <h1>Cash Flow</h1>
-          <p>Chart</p>
+        <div className="dash-item">
+          <div className="item-header">
+            <h3>Cash Flow</h3>
+            <a className="link">
+              <h4>View Report</h4>
+            </a>
+          </div>
+          <p>Cash coming in and going out of your business.</p>
         </div>
-        <div id="test">
-          <h1>Profit / Loss</h1>
+        <div className="dash-item">
+          <div className="item-header">
+            <h3>Cash Flow</h3>
+            <a className="link">
+              <h4>View Report</h4>
+            </a>
+          </div>
+          <p>Income and expenses only (includes unpaid invoices and bills).</p>
         </div>
-        <div>
-          <h1>Net Income</h1>
+        <div className="dash-item">
+          <div className="item-header">
+            <h3>Cash Flow</h3>
+            <a className="link">
+              <h4>View Report</h4>
+            </a>
+          </div>
         </div>
-        <div>
-          <h1>Expenses Chart</h1>
+        <div className="dash-item">
+          <div className="item-header">
+            <h3>Cash Flow</h3>
+            <a className="link">
+              <h4>View Report</h4>
+            </a>
+          </div>
         </div>
-        <div>
-          <h1>Payable </h1>
-        </div>
-        <div>
-          <h1>More Options</h1>
+        <div className="dash-item">
+          <div className="item-header">
+            <h3>Cash Flow</h3>
+            <a className="link">
+              <h4>View Report</h4>
+            </a>
+          </div>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
