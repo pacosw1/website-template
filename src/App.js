@@ -9,6 +9,7 @@ import { Post } from "./components/Post";
 import { SideMenu } from "./components/SideMenu";
 import { Landingpage } from "./components/Landingpage";
 import { Accounting } from "./components/Accounting";
+import { Sidebar } from "./components/Sidebar";
 
 class App extends Component {
   constructor(props) {
@@ -56,9 +57,8 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Navbar />
-        <Accounting posts={this.state.list} />
-        <div className="wrapper" />
+        <Sidebar />
+        <Dashboard posts={this.state.list} />
       </div>
     );
   }

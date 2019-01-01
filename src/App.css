@@ -1,35 +1,94 @@
 .login {
   text-align: center;
-  background-color: rgba(122, 193, 221, 0.651);
+  background-color: rgba(1, 144, 201, 0.014);
   padding: 8rem;
 }
+
+.dash {
+  display: flex;
+  padding: 1rem;
+  width: 80%;
+  flex-flow: wrap;
+  margin: 2rem;
+  justify-content: center;
+}
+#test {
+  background-image: url("https://openclipart.org/image/2400px/svg_to_png/271404/Chart-Of-SD-HD-And-UHD-Formats.png");
+}
+.dash div {
+  border: 1px solid;
+
+  text-align: center;
+  padding: 5rem;
+  width: 20rem;
+  height: 20rem;
+}
 .app {
-  margin: 0rem 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: stretch;
   background-color: white;
+}
+.sidebar {
+  background-color: #eaeef4;
+
+  width: 12.5%;
+}
+.sidebar * {
+  margin: 1.5rem 2rem;
+  font-size: 1.2rem;
+  color: rgb(49, 49, 49);
 }
 .wrapper {
   display: flex;
   flex-direction: row;
-  margin: 4rem;
 }
 .sidemenu p {
   margin-top: 3rem;
 }
 
+select {
+  text-align: center;
+  text-align-last: center;
+}
+
 #landingContent {
   display: flex;
-  padding: 5rem;
+  padding: 5;
   justify-content: center;
   margin: 2rem;
 }
 #accTable {
-  padding: 2rem;
-  background-color: grey;
+  flex: 1 100%;
+  border-radius: 0.3rem;
+  border: 1px solid;
+  border-color: rgb(196, 196, 196);
+  margin: 1.6rem;
+  height: 100vh;
 }
+
+.flex-item {
+  padding: 0rem 1rem;
+  border-radius: 0.3rem;
+  margin: 0rem 0.5rem;
+  border-style: none;
+  width: 10rem;
+  height: 3rem;
+}
+.flex-start {
+  align-self: flex-start;
+}
+
 .accounting {
   display: flex;
-  flex-direction: row;
+
+  margin: 1rem;
 }
+.flex-end {
+  margin-right: auto;
+}
+
 .landingItem p {
   background-color: white;
   padding: 2rem;
@@ -60,50 +119,46 @@
   color: white;
 
   background-image: url("http://res.cloudinary.com/simpleview/image/upload/v1454415126/clients/norway/Hamnoy_Lofoten_Norway_2_1_c0cf6de8-5b60-4571-b481-9729fab41d96.jpg");
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(72, 167, 255);
   display: flex;
   justify-content: center;
+}
+
+.post input {
+  transform: scale(1.4);
+  border-color: white;
+}
+.accounting button {
+  background-color: rgba(197, 197, 197, 0.493);
 }
 
 .post:hover {
-  border-radius: 0.3rem;
-  border: 1px solid;
+  background-color: rgba(115, 196, 250, 0.301);
 }
 
-.postContent {
-  margin: 0.4rem;
+select {
+  background-color: white;
 }
 .post {
   display: flex;
-
-  justify-content: center;
-  border: solid 1px;
-  border-color: white;
+  align-items: baseline;
+  border-bottom: 1px solid;
+  border-color: rgb(196, 196, 196);
 }
 
-#up:hover {
-  background-color: rgb(59, 138, 43);
-}
-#down:hover {
-  background-color: rgb(190, 38, 38);
-}
-.likes {
-  background-color: green;
-  display: flex;
-  margin: 2rem;
-  flex-direction: column;
-}
+.post * {
+  font-size: 1rem;
 
-.likes button {
-  background-color: rgb(60, 133, 197);
-  margin: 0;
-  border-style: none;
+  padding: 0rem rem;
+  margin-left: 2rem;
+  padding-right: 4rem;
 }
 
 input:focus {
   outline: none;
   box-shadow: 0px 0px 8px rgb(111, 169, 255);
 }
+
 .nav p:hover {
   text-decoration: bold;
   transition: 0.3s;
@@ -123,15 +178,11 @@ input:focus {
 
 body {
   background-color: rgb(216, 216, 216);
+  height: 100vh;
 }
 
 .nav * {
   margin: 1.3rem;
-}
-
-.dash {
-  padding: 5rem;
-  background-color: rgb(12, 146, 146);
 }
 
 ::placeholder {
@@ -153,11 +204,4 @@ body {
   border-style: 1px red;
   margin: 1rem;
   padding: 2rem;
-}
-
-button {
-  margin: 1rem;
-  padding: 2rem;
-  color: white;
-  border-style: none;
 }

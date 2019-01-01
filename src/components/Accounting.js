@@ -1,28 +1,27 @@
 import React, { Component } from "react";
 import { Post } from "./Post";
+import { Transactions } from "./Transactions";
 export const Accounting = props => {
   let { posts } = props;
-  let postsArray = posts.map(post => {
-    return <Post title={post.title} text={post.text} />;
-  });
   return (
-    <React.Fragment>
+    <div style={{ width: "87.5%" }}>
+      <h1 style={{ paddingLeft: "2rem" }}>Accounting</h1>
       <div className="accounting">
-        <select>
-          <option value="volvo">All Accounts</option>
-          <option value="saab">Saab</option>
-        </select>
-
-        <div className="rightMenu">
-          <button>Add Income</button>
-          <button>Add Expense</button>
-          <select>
-            <option value="volvo">All Accounts</option>
+        <div className="flex-end ">
+          <select style={{ width: "12rem" }} className=" flex-item flex-end ">
+            <option value="volvo">All Accounts ( $0.00 )</option>
             <option value="saab">Saab</option>
           </select>
         </div>
+
+        <button className=" flex-item ">Add Expense</button>
+        <button className=" flex-item ">Add Income</button>
+        <select className="  flex-item ">
+          <option value="volvo">More</option>
+          <option value="saab">Saab</option>
+        </select>
       </div>
-      <div id="accTable">{postsArray}</div>
-    </React.Fragment>
+      <Transactions posts={posts} />
+    </div>
   );
 };
