@@ -21,6 +21,8 @@ button {
   align-items: baseline;
   justify-content: space-between;
   background-color: #ebeff3;
+  align-items: center;
+  height: 2rem;
 }
 .product-create {
   border: 1px solid;
@@ -30,24 +32,23 @@ button {
   display: flex;
   flex-direction: column;
   background-color: #ebeff3;
+  padding-top: 3rem;
 }
 
 .product-item {
-  margin: 2rem;
-  height: 2rem;
-  width: 15rem;
+  height: 3.5rem;
+  width: 20rem;
 }
 
 .header-item {
-  padding: 0rem 3rem;
-  height: 2rem;
+  padding: 0.2rem 1rem;
 }
 .right-header {
   margin: 0em 2rem;
 }
 
 .product-container div {
-  border-color: rgb(167, 167, 167);
+  border-color: rgba(10, 10, 10, 0.137);
 }
 
 .product-content {
@@ -55,20 +56,18 @@ button {
   height: 100vh;
 }
 
-.right {
-  padding-left: 6rem;
-}
 .product-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   margin: 1rem 10rem;
+  border-color: blue;
 }
 input {
   color: black;
   border-style: thin;
 }
 .search {
-  width: 83.3vh;
+  width: 50hv;
 }

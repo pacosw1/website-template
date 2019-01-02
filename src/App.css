@@ -71,10 +71,12 @@
 @media screen and (max-width: 897px) {
   .accounting {
     flex-flow: wrap;
+    border: 10px solid;
   }
   .acc-container {
     display: flex;
     flex-flow: wrap;
+    width: 100%;
   }
 
   .dash-menu {
@@ -88,8 +90,7 @@
     display: block;
   }
 
-  .sidebar p,
-  h1 {
+  .sidebar * {
     display: none;
   }
   .sidebar {
@@ -118,9 +119,6 @@
   #navMenu {
     display: none;
   }
-  .acc-container {
-    flex: 1 100%;
-  }
 }
 .wrapper {
   display: flex;
@@ -141,14 +139,6 @@ select {
   justify-content: center;
   margin: 2rem;
 }
-#accTable {
-  flex: 1 100%;
-  border-radius: 0.3rem;
-  border: 1px solid;
-  border-color: rgb(196, 196, 196);
-  margin: 1.6rem;
-  height: 100vh;
-}
 
 .flex-item {
   padding: 0rem 1rem;
@@ -162,11 +152,6 @@ select {
   align-self: flex-start;
 }
 
-.accounting {
-  display: flex;
-
-  margin: 1rem;
-}
 .flex-end {
   margin-right: auto;
 }
@@ -204,36 +189,6 @@ select {
   background-color: rgb(72, 167, 255);
   display: flex;
   justify-content: center;
-}
-
-.post input {
-  transform: scale(1.4);
-  border-color: white;
-}
-.accounting button {
-  background-color: rgba(197, 197, 197, 0.493);
-}
-
-.post:hover {
-  background-color: rgba(115, 196, 250, 0.301);
-}
-
-select {
-  background-color: white;
-}
-.post {
-  display: flex;
-  align-items: baseline;
-  border-bottom: 1px solid;
-  border-color: rgb(196, 196, 196);
-}
-
-.post * {
-  font-size: 1rem;
-
-  padding: 0rem rem;
-  margin-left: 2rem;
-  padding-right: 4rem;
 }
 
 .nav p:hover {

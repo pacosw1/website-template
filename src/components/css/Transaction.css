@@ -1,0 +1,57 @@
+#accTable {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-top: none;
+  border: 1px solid;
+  border-bottom-left-radius: 0.2rem;
+  border-color: rgba(128, 128, 128, 0.411);
+
+  border-bottom-right-radius: 0.2rem;
+}
+.transaction-view * {
+  font-size: 0.8rem;
+}
+
+.transaction-view {
+  border-bottom: none;
+  border: 1px solid;
+  border-top: none;
+  border-color: rgba(128, 128, 128, 0.411);
+}
+
+.transaction-container div {
+  display: flex;
+}
+
+.transaction-container {
+  display: flex;
+  border-top: none;
+  justify-content: space-between;
+  border: px solid;
+
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-color: rgba(128, 128, 128, 0.411);
+}
+
+.transaction-container * {
+  margin: 0rem 1rem;
+  align-items: center;
+}
+.transaction-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.accounts {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  flex-direction: column;
+}
+.accounts * {
+  align-self: flex-start;
+}

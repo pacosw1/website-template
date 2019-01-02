@@ -1,10 +1,11 @@
 import React, { Component } from "react";
-import { Post } from "./Post";
+import { TransactionEntry } from "./TransactionEntry";
+import "./css/Transaction.css";
 
 export const Transactions = props => {
   let { posts } = props;
-  let postsArray = posts.map(post => {
-    return <Post title={post.title} text={post.text} />;
+  let postsArray = posts.map(entry => {
+    return <TransactionEntry title={entry.title} text={entry.text} />;
   });
-  return <div id="accTable">{postsArray}</div>;
+  return <div className="acc-table">{postsArray}</div>;
 };

@@ -6,7 +6,7 @@ export const ProductManager = props => {
     <div className="product-container">
       <div className="product-header">
         <div>
-          <p className="header-item right"> Product Manager</p>
+          <p className="header-item right"> Create or Edit Product</p>
         </div>
         <div className="right-header">
           <input

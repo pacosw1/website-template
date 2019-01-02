@@ -5,7 +5,7 @@ import { Login } from "./components/Login";
 import { Dashboard } from "./components/Dashboard";
 import { Navbar } from "./components/Navbar";
 import { Frontpage } from "./components/Frontpage";
-import { Post } from "./components/Post";
+import { TransactionEntry } from "./components/TransactionEntry";
 import { SideMenu } from "./components/SideMenu";
 import { Landingpage } from "./components/Landingpage";
 import { Accounting } from "./components/Accounting";
@@ -16,6 +16,7 @@ import { ProductManager } from "./components/ProductManager";
 class App extends Component {
   constructor(props) {
     super(props);
+    this.onCreateTransaction = this.onCreateTransaction.bind(this);
     this.state = {
       list: [
         {
@@ -60,9 +61,19 @@ class App extends Component {
     return (
       <div className="app">
         <Sidebar />
-        <ProductManager posts={this.state.list} />
+        <Accounting
+          onCreateTransaction={this.onCreateTransaction}
+          posts={this.state.list}
+        />
       </div>
     );
+  }
+  onCreateTransaction() {
+    let table1 = document.getElementById("accTable");
+    let table = document.getElementById("create-new");
+    console.log(table[0]);
+    table.style.display = "none";
+    table1.style.width = "150vh";
   }
 }
 
