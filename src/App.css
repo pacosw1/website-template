@@ -60,7 +60,7 @@
 .sidebar {
   background-color: #eaeef4;
 
-  width: 25vh;
+  width: 300px;
 }
 
 .sidebar * {
@@ -97,8 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     order: 0;
-    width: 100%;
-    flex: 1 100%;
+    width: 500px;
     transition: all 0.4s;
     transition-delay: 0.1s;
   }
@@ -112,7 +111,7 @@
 
 @media screen and (min-width: 952px) {
   .sidebar {
-    width: 25vh;
+    width: 500px;
     transition: all 0.2s;
   }
 
