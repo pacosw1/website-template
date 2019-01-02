@@ -10,6 +10,8 @@ import { SideMenu } from "./components/SideMenu";
 import { Landingpage } from "./components/Landingpage";
 import { Accounting } from "./components/Accounting";
 import { Sidebar } from "./components/Sidebar";
+import { Transactions } from "./components/Transactions";
+import { ProductManager } from "./components/ProductManager";
 
 class App extends Component {
   constructor(props) {
@@ -57,8 +59,8 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Sidebar posts={this.state.list} />
-        <Dashboard />
+        <Sidebar />
+        <ProductManager posts={this.state.list} />
       </div>
     );
   }

@@ -4,7 +4,7 @@ import { Transactions } from "./Transactions";
 export const Accounting = props => {
   let { posts } = props;
   return (
-    <div style={{ width: "87.5%" }}>
+    <div className="acc-container">
       <h1 style={{ paddingLeft: "2rem" }}>Accounting</h1>
       <div className="accounting">
         <div className="flex-end ">
